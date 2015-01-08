@@ -46,8 +46,8 @@
     }
 }
 
-@include gridify(2, 400);
-@include gridify(4, 600);
+@include gridify(2, 800); //creates .grid-2-800
+@include gridify(3, 1024); //creates .grid-3-1024
 
 /**
  * GENERAL
@@ -56,3 +56,37 @@
 body {
     transition: opacity .25s ease;
 }
+
+$borderColor: lightblue;
+.column {
+    .picturebox1 {
+        position: relative;
+        border: 2px solid $borderColor;
+    }
+    .grid-5 {
+        border: 2px solid $borderColor;
+        border-top: none;
+        & > * {
+            width: 20%;
+            text-align: center;
+            &:not(:last-child){
+                border-right: 1px solid $borderColor;
+            }
+        }
+    }
+    .button {
+        display: inline-block;
+        width: 20%;
+        height: 10%;
+        padding: none;
+        border: none;
+    }
+    img {
+        width: 100%;
+    }
+}
+
+
+
+
+

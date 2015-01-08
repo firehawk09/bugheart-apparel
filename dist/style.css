@@ -830,16 +830,36 @@ abbr[title]:hover {
     content: "";
     font-size: medium; }
 
-@media only screen and (min-width: 400px) {
-  .grid-2-400 > * {
+@media only screen and (min-width: 800px) {
+  .grid-2-800 > * {
     width: 48%; } }
 
-@media only screen and (min-width: 600px) {
-  .grid-4-600 > * {
-    width: 23%; } }
+@media only screen and (min-width: 1024px) {
+  .grid-3-1024 > * {
+    width: 31.33333%; } }
 
 /**
  * GENERAL
  */
 body {
   transition: opacity .25s ease; }
+
+.column .picturebox1 {
+  position: relative;
+  border: 2px solid lightblue; }
+.column .grid-5 {
+  border: 2px solid lightblue;
+  border-top: none; }
+  .column .grid-5 > * {
+    width: 20%;
+    text-align: center; }
+    .column .grid-5 > *:not(:last-child) {
+      border-right: 1px solid lightblue; }
+.column .button {
+  display: inline-block;
+  width: 20%;
+  height: 10%;
+  padding: none;
+  border: none; }
+.column img {
+  width: 100%; }
