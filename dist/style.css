@@ -844,34 +844,69 @@ abbr[title]:hover {
 body {
   transition: opacity .25s ease; }
 
-.column .picturebox1 {
-  position: relative;
-  border: 2px solid lightblue; }
-.column .grid-5 {
-  border: 2px solid lightblue;
-  border-top: none; }
-  .column .grid-5 > * {
-    width: 17%;
-    text-align: center; }
-    .column .grid-5 > *:not(:last-child) {
-      border-right: 1px solid lightblue; }
-.column .button {
+.column {
+  color: #1D404F; }
+  .column .picturebox1 {
+    position: relative;
+    border: 3px solid #84BED6; }
+  .column .grid-5 {
+    border: 3px solid #84BED6;
+    border-top: none; }
+    .column .grid-5 > * {
+      text-align: center; }
+      .column .grid-5 > *:not(:last-child) {
+        border-right: 3px solid #84BED6; }
+
+.sizes {
+  border: 3px solid #84BED6;
+  background-color: white;
+  position: absolute;
+  height: 100px;
+  width: 65px;
+  bottom: 125%;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 1;
+  opacity: 0; }
+
+.sizes:hover {
+  opacity: 1; }
+
+.size:hover {
+  background-color: #84BED6; }
+
+.size {
+  height: 20%;
+  width: 100%; }
+
+.button {
   display: inline-block;
   width: 20%;
   height: 10%;
   padding: none;
   border: none;
   background-color: white; }
-.column img {
+
+img {
   width: 100%; }
-.column .titleprice {
-  position: relative;
-  font-color: red; }
-.column .title {
+
+.titleprice {
+  position: relative; }
+
+.flipbutton {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 10px;
+  height: 10px;
+  border: 2px solid red; }
+
+.title {
   width: 50%;
   position: absolute;
   left: 0; }
-.column .price {
+
+.price {
   width: 15%;
   position: absolute;
   right: 0;
