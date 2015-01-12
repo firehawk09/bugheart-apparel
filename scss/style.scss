@@ -28,9 +28,8 @@
     position: relative;
     & > * {
         font-size: medium;
-        text-align: left;
         display: inline-block;
-        width: 100%;
+        width: 20%;
         vertical-align: top;
     }
     &:after {
@@ -103,7 +102,6 @@ $fontcolor:#1D404F;
 
 .size {
     height: 20%;
-    width: 100%;
 }
 
 .button {
